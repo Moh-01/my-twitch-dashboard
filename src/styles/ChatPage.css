@@ -1,0 +1,21 @@
+/* src/styles/ChatPage.css */
+
+.chat-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .chat-page h2 {
+    margin-bottom: 20px;
+  }
+  
+  .chat-page iframe {
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    height: 800px;
+    border-radius: 8px;
+  }
+  

@@ -1,0 +1,177 @@
+/* src/styles/LoginPage.css */
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /*background-image: url('/background-image.jpg'); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-page img {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .login-page h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .login-page button {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+  .typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid #fff;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #fff; }
+  }
+
+  @keyframes float {
+    0% { transform: translate(-50%, -50%) translateY(0); }
+    50% { transform: translate(-50%, -50%) translateY(-20px); }
+    100% { transform: translate(-50%, -50%) translateY(0); }
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;600&display=swap');
+
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #0e0e10; /* Twitch dark theme */
+}
+
+/* Content styling */
+.content {
+  z-index: 1; /* Ensure content stays above the background */
+  text-align: center;
+  color: white;
+}
+
+.content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  
+}
+
+button {
+  background-color: #9147FF;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+
+/* */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: url('/public/bg.jpg') no-repeat center center/cover; /* Add your background image */
+}
+
+/* Floating elements (e.g., circles) */
+.floating-elements::before,
+.floating-elements::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.15); /* Light, subtle floating shapes */
+  border-radius: 50%;
+  z-index: -1;
+  animation: float 10s ease-in-out infinite;
+}
+
+.floating-elements::before {
+  width: 80px;
+  height: 80px;
+  top: 20%;
+  left: 10%;
+  animation-duration: 12s;
+  animation-delay: 0s;
+}
+
+.floating-elements::after {
+  width: 100px;
+  height: 100px;
+  bottom: 30%;
+  right: 15%;
+  animation-duration: 15s;
+  animation-delay: -3s;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+.typewriter h1 {
+overflow: hidden;
+border-right: .15em solid #fff;
+white-space: nowrap;
+margin: 0 auto;
+letter-spacing: .15em;
+font-size: 5rem; /* Adjust as needed */
+animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+
+/* White outline */
+color: white;
+text-shadow: 
+  -2px -2px 0 #fff, /* Top left */
+    2px -2px 0 #fff, /* Top right */
+  -2px  2px 0 #fff, /* Bottom left */
+    2px  2px 0 #fff; /* Bottom right */
+}

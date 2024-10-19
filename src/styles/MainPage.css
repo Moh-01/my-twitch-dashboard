@@ -1,0 +1,17 @@
+/* src/styles/MainPage.css */
+
+.main-page {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .main-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .main-page p {
+    font-size: 18px;
+    color: #cccccc;
+  }
+  
