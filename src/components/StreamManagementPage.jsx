@@ -39,7 +39,6 @@ const StreamManagementPage = () => {
           game_id: categoryId,
         },
       });
-      alert('Stream info updated!');
     } catch (error) {
       console.error(error);
     }

@@ -20,7 +20,6 @@ const App = () => {
       if (accessToken) {
         setToken(accessToken);
         setAuthToken(accessToken);
-        alert(accessToken);
         window.history.replaceState(null, null, ' ');
       }
     }

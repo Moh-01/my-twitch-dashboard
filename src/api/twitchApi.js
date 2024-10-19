@@ -1,7 +1,8 @@
 import axios from 'axios';
+const dotenv = require('dotenv');
 
 const CLIENT_ID = 'joornkn6six0ohi98jdd540ihrn046';
-const REDIRECT_URI = 'http://localhost:3000';
+const REDIRECT_URI = process.env.REDIRECT_URI
 //const SCOPES = 'user:read:email user:edit chat:read channel:manage:broadcast channel:read:redemptions channel:manage:redemptions';
 const SCOPES = 'channel:read:redemptions channel:manage:redemptions user:read:email user:edit chat:read channel:manage:broadcast';
 

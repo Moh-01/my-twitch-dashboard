@@ -46,7 +46,7 @@ const ChannelPointsPage = () => {
 const toggleReward = async (rewardId, isPaused) => {
   try {
     // Fetch broadcaster (user) ID - you can hardcode this if you already know it
-    const userResponse = await api.get('/helix/users?login=YOUR_TWITCH_USERNAME');
+    const userResponse = await api.get('/helix/users?login=zmoh');
     const userId = userResponse.data.data[0].id;
 
     // Correct API endpoint and header setup for pausing/unpausing rewards
